@@ -1,0 +1,11 @@
+{
+  "name": "squabble-site",
+  "main": "script.js",
+  "scripts": {
+    "lint": "eslint \"**/*.js\""
+  },
+  "devDependencies": {
+    "eslint": "^8.29.0",
+    "eslint-config-standard": "^17.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "quotes": ["error", "single"],
+    "semi": ["error", "never"],
+    "camelcase": ["error"],
+    "dot-notation": ["error"],
+    "eqeqeq": ["error"],
+    "no-return-assign": ["error"],
+    "no-var": ["error"],
+    "prefer-const": ["error"],
+    "sort-imports": ["error"],
+    "spaced-comment": ["error"]
+  }
+}
