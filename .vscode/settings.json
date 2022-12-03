@@ -7,8 +7,5 @@
     "source.fixAll.eslint": true
   },
   "eslint.validate": ["javascript"],
-  "cSpell.words": [
-    "camelcase", //
-    "siri"
-  ]
+  "cSpell.words": ["camelcase", "LHCI", "siri"]
 }
