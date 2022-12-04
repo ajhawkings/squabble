@@ -8,3 +8,4 @@ A very quick vanilla HTML/CSS/JS website created for a Young Enterprise project
 - [ ] Security headers
 - [ ] LHCI
 - [ ] Dependabot
+- [ ] Analytics
