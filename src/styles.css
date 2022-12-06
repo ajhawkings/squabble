@@ -139,7 +139,9 @@ p {
 }
 
 #from {
-  text-align: left;
+  text-align: right;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 2rem;
 }
 
 /* contact */
