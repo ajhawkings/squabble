@@ -1,4 +1,4 @@
-const images = ['barbie', 'q1', 'homer', 'q2', 'grinch', 'q3']
+const images = ['homer', 'q1', 'barbie', 'q2', 'grinch', 'q3']
 
 let counter = 0
 
