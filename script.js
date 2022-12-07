@@ -4,7 +4,7 @@ let counter = 0
 
 const gallery = document.getElementById('gallery')
 
-function next (increment) {
+function slideshow (increment) {
   counter += increment
   if (counter === images.length) {
     counter = 0
@@ -14,7 +14,6 @@ function next (increment) {
   }
 
   for (let i = 0; i < 3; i++) {
-    console.log(counter, i)
     const image = gallery.children[i + 1].children[0]
     const imageName = images[counter + i] || images[counter + i - images.length]
     image.src = `images/${imageName}.png`
@@ -22,9 +21,9 @@ function next (increment) {
   }
 }
 
-next(1)
+slideshow(1)
 
 const forward = document.getElementById('forward')
 const back = document.getElementById('back')
-forward.addEventListener('click', () => { next(1) })
-back.addEventListener('click', () => { next(-1) })
+forward.addEventListener('click', () => { slideshow(1) })
+back.addEventListener('click', () => { slideshow(-1) })
