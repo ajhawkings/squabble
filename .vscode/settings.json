@@ -7,5 +7,14 @@
     "source.fixAll.eslint": true
   },
   "eslint.validate": ["javascript"],
-  "cSpell.words": ["camelcase", "LHCI", "siri"]
+  "cSpell.words": [
+    "camelcase",
+    "grinch",
+    "LHCI",
+    "mozallowfullscreen",
+    "msallowfullscreen",
+    "siri",
+    "slideshow",
+    "webkitallowfullscreen"
+  ]
 }
