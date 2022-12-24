@@ -9,6 +9,7 @@
 * {
   margin: 0;
   font-family: League Spartan, sans-serif;
+  font-size: 16px;
 }
 
 body {
@@ -17,7 +18,14 @@ body {
 
 h2 {
   text-align: center;
-  padding-bottom: 1.5rem
+  padding-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+h2>u,
+h2>i {
+  /* fix font size for bold tags within headers*/
+  font-size: inherit;
 }
 
 /* menu and nav */
