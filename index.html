@@ -34,6 +34,29 @@
   <link rel="stylesheet" href="styles.css">
   <!-- Script -->
   <script src="script.js" defer></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript" defer>
+    (function () {
+      emailjs.init('d5z4wEW7PwRT_VX_L');
+    })();
+  </script>
+  <script type="text/javascript" defer>
+    window.onload = function () {
+      const form = document.getElementById('form');
+      form.addEventListener('submit', function (event) {
+        event.preventDefault()
+        // send form
+        emailjs.sendForm('contact_service', 'contact_form', form)
+          .then(() => {
+            // reset the form
+            form.reset()
+          }, (error) => {
+            // else log the error
+            console.log(error)
+          });
+      });
+    }
+  </script>
 </head>
 
 <body>
@@ -76,11 +99,17 @@
     </div>
     <div class="contact" id="contact">
       <h2>Contact us</h2>
-      <iframe
-        src="https://forms.microsoft.com/Pages/ResponsePage.aspx?id=CqB-ofBmJkqUWGitNeQH9UdExjDOOy9EgEXVKvNGOiRUMExPUFNHQzVLNkROWVFCQ0U5QUYyQ0RCWS4u&embed=true"
-        frameborder="0" marginwidth="0" marginheight="0" allowfullscreen webkitallowfullscreen mozallowfullscreen
-        msallowfullscreen scrolling="no" title="Contact us form">
-      </iframe>
+      <form id="form">
+        <div class="form-grid">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <input type="submit" id="submit" value="Send">
+      </form>
     </div>
   </main>
   <footer>&copy; Squabble, 2022</footer>
