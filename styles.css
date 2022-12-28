@@ -125,15 +125,20 @@ main>div {
   border-radius: 50px;
 }
 
-@media (max-width: 600px) {
+#img2,
+#img3 {
+  display: none;
+}
+
+@media (min-width: 600px) {
   #img2 {
-    display: none;
+    display: block;
   }
 }
 
-@media (max-width: 800px) {
+@media (min-width: 800px) {
   #img3 {
-    display: none;
+    display: block;
   }
 }
 
