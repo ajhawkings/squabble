@@ -5,6 +5,6 @@
     "lint": "eslint \"**/*.js\""
   },
   "devDependencies": {
-    "eslint": "^8.29.0"
+    "eslint": "^8.31.0"
   }
 }
