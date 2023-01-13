@@ -4,6 +4,7 @@
   --dark-blue: #004aad;
   --yellow: #ffcc00;
   --red: #ff0000;
+  --green: #00ff15;
 }
 
 * {
@@ -148,7 +149,8 @@ main>div {
   background-color: var(--yellow);
 }
 
-p {
+p,
+li {
   line-height: 1.5rem;
 }
 
@@ -158,9 +160,14 @@ p {
   font-size: 2rem;
 }
 
+/* debating tips */
+.debating {
+  background-color: var(--red);
+}
+
 /* contact */
 .contact {
-  background-color: #00ff15;
+  background-color: var(--green);
 }
 
 form {
