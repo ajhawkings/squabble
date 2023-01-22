@@ -162,12 +162,13 @@ li {
 
 /* debating tips */
 .debating {
-  background-color: var(--red);
+  background-color: var(--green);
 }
 
 /* contact */
 .contact {
-  background-color: var(--green);
+  background-color: var(--dark-blue);
+  color: white;
 }
 
 form {
