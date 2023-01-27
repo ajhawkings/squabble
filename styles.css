@@ -87,6 +87,7 @@ main>div {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  color: white;
 }
 
 .gallery {
@@ -162,7 +163,8 @@ li {
 
 /* debating tips */
 .debating {
-  background-color: var(--green);
+  background-color: var(--light-blue);
+  color: white;
 }
 
 /* contact */
