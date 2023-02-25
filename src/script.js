@@ -16,7 +16,7 @@ function slideshow (increment) {
   for (let i = 0; i < 3; i++) {
     const image = gallery.children[i + 1].children[0]
     const imageName = images[counter + i] || images[counter + i - images.length]
-    image.src = `images/${imageName}.png`
+    image.src = `images/${imageName}.webp`
     image.alt = imageName
   }
 }
