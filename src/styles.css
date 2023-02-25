@@ -41,6 +41,7 @@ menu {
 
 menu>img {
   height: 100%;
+  width: auto;
 }
 
 nav {
@@ -106,6 +107,7 @@ main>div {
 
 .gallery img {
   width: 100%;
+  height: auto;
   border: 2.5px solid black;
   border-radius: 15px;
 }
