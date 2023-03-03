@@ -17,14 +17,14 @@ body {
   background-color: black;
 }
 
+h1,
 h2 {
   text-align: center;
   padding-bottom: 1.5rem;
   font-size: 2rem;
 }
 
-h2>u,
-h2>i {
+i {
   /* fix font size for bold tags within headers*/
   font-size: inherit;
 }
@@ -169,6 +169,11 @@ li {
 .debating {
   background-color: var(--light-blue);
   color: white;
+}
+
+.center {
+  text-align: center;
+  display: block;
 }
 
 /* contact */
