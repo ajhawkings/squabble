@@ -113,13 +113,19 @@ main>div {
 }
 
 .button {
-  background-color: black;
+  background-color: #e00;
   color: white;
   border-radius: 20px;
-  font-size: 1.5rem;
+  font-size: max(4vw, 1.5rem);
   padding: 1rem;
   text-align: center;
   text-decoration: none;
+  box-shadow: 10px 10px 10px 0px #00000060;
+}
+
+.button:hover {
+  transform: translate(5px, 5px);
+  box-shadow: none;
 }
 
 .arrow {
