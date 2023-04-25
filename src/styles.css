@@ -116,8 +116,9 @@ main>div {
   background-color: #e00;
   color: white;
   border-radius: 20px;
-  font-size: max(4vw, 1.5rem);
+  font-size: min(max(4vw, 1.5rem), 2.8rem);
   padding: 1rem;
+  margin-bottom: .6rem;
   text-align: center;
   text-decoration: none;
   box-shadow: 10px 10px 10px 0px #00000060;
