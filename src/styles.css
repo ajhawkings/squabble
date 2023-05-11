@@ -17,15 +17,21 @@ body {
   background-color: black;
 }
 
-h1,
+h1 {
+  text-align: center;
+  padding: 1rem;
+  font-size: 3rem;
+}
+
 h2 {
   text-align: center;
   padding-bottom: 1.5rem;
   font-size: 2rem;
 }
 
+u,
 i {
-  /* fix font size for bold tags within headers*/
+  /* fix font size for tags within headers*/
   font-size: inherit;
 }
 
@@ -87,7 +93,7 @@ main>div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
   color: white;
 }
 
