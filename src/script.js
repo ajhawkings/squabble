@@ -1,3 +1,5 @@
+// No longer used, but kept for reference
+
 const images = ['homer', 'q1', 'barbie', 'q2', 'grinch', 'q3']
 
 let counter = 0
