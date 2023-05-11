@@ -83,7 +83,7 @@ main>div {
 
   main>div,
   menu {
-    padding: 2rem calc(50vw - 500px);
+    padding: 2rem max(2rem, calc(50vw - 500px));
   }
 }
 
