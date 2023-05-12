@@ -19,7 +19,6 @@ body {
 
 h1 {
   text-align: center;
-  padding: 1rem;
   font-size: 3rem;
 }
 
@@ -95,6 +94,7 @@ main>div {
   align-items: center;
   gap: 2.5rem;
   color: white;
+  padding: 3rem 2rem;
 }
 
 .links {
