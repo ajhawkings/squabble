@@ -17,15 +17,20 @@ body {
   background-color: black;
 }
 
-h1,
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
 h2 {
   text-align: center;
   padding-bottom: 1.5rem;
   font-size: 2rem;
 }
 
+u,
 i {
-  /* fix font size for bold tags within headers*/
+  /* fix font size for tags within headers*/
   font-size: inherit;
 }
 
@@ -39,7 +44,7 @@ menu {
   justify-content: center;
 }
 
-menu>img {
+.logo {
   height: 100%;
   width: auto;
 }
@@ -77,83 +82,62 @@ main>div {
 
   main>div,
   menu {
-    padding: 2rem calc(50vw - 500px);
+    padding: 2rem max(2rem, calc(50vw - 500px));
   }
 }
 
-/* home gallery */
+/* home section */
 .home {
   background-color: var(--light-blue);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
   color: white;
+  padding: 3rem 2rem;
 }
 
-.gallery {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 5%;
-  align-items: center;
+.links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  gap: 2rem;
+}
+
+@media (max-width: 500px) {
+  .links {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tile {
   position: relative;
 }
 
-.gallery div {
-  width: 100%;
-  height: 30%;
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-  border: 2.5px solid black;
-  border-radius: 15px;
-}
-
-.button {
-  background-color: #e00;
-  color: white;
-  border-radius: 20px;
-  font-size: min(max(4vw, 1.5rem), 2.8rem);
-  padding: 1rem;
-  margin-bottom: .6rem;
-  text-align: center;
+.tile>div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-decoration: none;
-  box-shadow: 10px 10px 10px 0px #00000060;
-}
-
-.button:hover {
-  transform: translate(5px, 5px);
-  box-shadow: none;
-}
-
-.arrow {
-  background-color: black;
   color: white;
   font-size: 2rem;
-  border: none;
-  height: 50px;
-  aspect-ratio: 1/1;
-  border-radius: 50px;
+  text-align: center;
 }
 
-#img2,
-#img3 {
-  display: none;
+.tile>img {
+  border-radius: 2rem;
+  width: 100%;
+  filter: brightness(0.6);
+  position: relative;
 }
 
-@media (min-width: 600px) {
-  #img2 {
-    display: block;
-  }
+.tile:hover {
+  transform: scale(1.04);
 }
 
-@media (min-width: 800px) {
-  #img3 {
-    display: block;
-  }
+.tile:hover>img {
+  filter: brightness(0.8);
 }
 
 /* about */

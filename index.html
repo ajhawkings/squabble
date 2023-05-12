@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home | Squabble Card Game - A Young Enterprise team</title>
   <meta name='theme-color' content='#004aad' />
-  <!-- Important script -->
-  <script src="script.js" defer></script>
   <!-- Favicon -->
   <link rel='icon' href='images/favicon.ico' />
   <!-- Search Engines -->
@@ -72,7 +70,9 @@
 
 <body>
   <menu>
-    <img src="images/logo.webp" alt="logo" width="1012" height="424">
+    <a class="logo" href="/">
+      <img class="logo" src="images/logo.webp" alt="logo" width="1012" height="424" priority>
+    </a>
     <nav>
       <a href="/#home">Home</a>
       <a href="/#about">About</a>
@@ -82,17 +82,33 @@
   </menu>
   <main>
     <div class="home" id="home">
-      <h1>Squabble - a seriously <i>silly</i> game!</h1>
-      <div class="gallery" id="gallery">
-        <button class="arrow" id="back">&lt;</button>
-        <div><img width="900" height="1400"></div>
-        <div id="img2"><img width="900" height="1400"></div>
-        <div id="img3"><img width="900" height="1400"></div>
-        <button class="arrow" id="forward">&gt;</button>
+      <h1>The <u>seriously</u> <i>silly</i> card game!</h1>
+      <div class="links">
+        <a class="tile" href="https://www.ye-tradingstation.org.uk/product/squabble-debating-card-game">
+          <img src="images/pack.webp" alt="Squabble pack" priority>
+          <div>Buy Squabble now!</div>
+        </a>
+        <a class="tile" href="https://www.instagram.com/p/CsCeXXRt2sN/">
+          <img src="images/final.webp" alt="Squabble team">
+          <div>Squabble progresses to Young Enterprise London & Kent final</div>
+        </a>
+        <a class="tile" href="/debating">
+          <img src="images/illustration.webp" alt="Squabble illustration">
+          <div>Learn debating skills</div>
+        </a>
+        <a class="tile" href="https://instagram.com/squabblecardgame">
+          <img src="images/instagram.webp" alt="Squabble Instagram">
+          <div>Visit our Instagram</div>
+        </a>
+        <a class="tile" href="https://www.youtube.com/watch?v=e0V0nSy5X1E">
+          <img src="images/dealt.webp" alt="Squabble cards dealt out">
+          <div>Watch our promotional video on YouTube!</div>
+        </a>
+        <a class="tile">
+          <img src="images/squirrel.webp" alt="Squabble cards dealt out">
+          <div>COMING SOON: Our promotional online game</div>
+        </a>
       </div>
-      <a href='https://www.ye-tradingstation.org.uk/product/squabble-debating-card-game#delivery' class="button">
-        Buy Squabble NOW - click here!
-      </a>
     </div>
     <div class="about" id="about">
       <h2>We are Squabble, a Young Enterprise team</h2>
@@ -109,6 +125,30 @@
         - Squabble Young Enterprise team
       </p>
     </div>
+    <div class="debating">
+      <h2>Tips for speaking</h2>
+      <ul>
+        <li><b>Stay on topic:</b> You have limited time to be convincing, so don't waste valuable seconds on something
+          off-topic</li>
+        <li><b>Speak clearly and don't rush:</b> Many new debaters mumble or rush what they're saying — don't fall into
+          this trap</li>
+        <li><b>Be confident:</b> No-one can be perfect at something they're new to, so don't be afraid to to take risks
+          and put yourself out there</li>
+        <li><b>Think about your body language:</b> Speaking is about selling your viewpoint to the audience, so body
+          language can have a very large impact</li>
+        <li><b>Listen:</b> To be a good speaker, it's important to have a good understanding of counterarguments that
+          invalidate your stance — so make sure you are respectful and listen carefully to the other players</li>
+        <li><b>Anticipate your opponent's questions:</b> This can be a very effective tactic because it allows you extra
+          time to come up with convincing arguments, and you can use this to make your opponents' views seem less valid
+        </li>
+        <li><b>Take breaks:</b> Stop and take a breath when needed - don't be afraid to pause and gather your thoughts.
+        </li>
+        <li><b>Have fun:</b> Remember, this is a game! It's designed to both improve your communication skills AND allow
+          you to enjoy yourself</li>
+      </ul>
+      <br>
+      <a href="/debating" class="center">Read more</a>
+    </div>
     <!-- <div class="debating">
       <h2>Tips for debating</h2>
       <ul>
@@ -119,7 +159,7 @@
         <li>Always be calm and polite to other players</li>
       </ul>
     </div> -->
-    <div class="debating">
+    <!-- <div class="debating">
       <h2>Why debate?</h2>
       <p>Debate is an integral part of our modern day life, in the form of both personal interactions and public
         affairs. It is a great way to express opposing viewpoints and, through respectful dialogue, learn to
@@ -130,7 +170,7 @@
       </p>
       <br>
       <a href="/debating" class="center">Read more about debating</a>
-    </div>
+    </div> -->
     <div class="contact" id="contact">
       <h2>Contact us</h2>
       <form id="form">
