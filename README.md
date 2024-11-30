@@ -1,11 +1,6 @@
-# Squabble game
+# Squabble card game
 
-A very quick vanilla HTML/CSS/JS website created for a Young Enterprise project
+A very quick vanilla HTML/CSS/JS website created for a Young Enterprise project!
 
-## TODO
+Archived at [squabble.hawkings.me]() (formerly squabblecardgame.com)
 
-- [x] Meta tags
-- [ ] Security headers
-- [ ] LHCI
-- [x] Dependabot
-- [ ] Analytics
